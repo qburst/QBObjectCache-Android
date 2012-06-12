@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout 
+    android:id="@+id/relativeLayout1" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" 
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <EditText 
+  
+         android:id="@+id/setFileId" 
+         android:layout_width="160dp" 
+         android:layout_height="wrap_content"
+         android:hint="file id"
+         android:layout_marginLeft="100dp"
+         android:layout_marginTop="20dp"
+         ></EditText>
+        
+        <EditText 
+        android:id="@+id/username" 
+        android:hint="username" 
+        android:layout_width="160dp" 
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="70dp">
+        </EditText>
+        
+        <EditText 
+        android:id="@+id/password" 
+        android:hint="Password" 
+        android:password="true"
+        android:layout_width="160dp" 
+        android:layout_height="wrap_content" 
+       
+        android:layout_below="@+id/username"
+        android:layout_marginLeft="100dp">
+        </EditText>
+        
+        <EditText 
+        android:id="@+id/cardNumber" 
+        
+        android:layout_width="160dp" 
+        android:layout_height="wrap_content" 
+       
+        android:layout_below="@+id/password"
+        android:hint="card number"
+        android:layout_marginLeft="100dp">
+        </EditText>
+        
+        <EditText 
+        android:id="@+id/CCVNumber" 
+        android:hint="CCV Number" 
+        android:layout_width="160dp" 
+        android:layout_height="wrap_content" 
+       
+        android:layout_below="@+id/cardNumber"
+        android:layout_marginLeft="100dp">
+        </EditText>
+        
+        <EditText 
+        android:id="@+id/expiryDate" 
+        android:hint="Expiry Date" 
+        android:layout_width="160dp" 
+        android:layout_height="wrap_content" 
+   
+        android:layout_below="@+id/CCVNumber"
+        android:layout_marginLeft="100dp">
+        </EditText>
+        
+        <Button
+        android:id="@+id/saveDetails"
+        android:text="Save Details"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/expiryDate"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="100dp">
+        
+        </Button>
+        
+        
+        
+    </RelativeLayout>
+   

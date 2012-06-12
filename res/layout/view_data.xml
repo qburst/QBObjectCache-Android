@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/result_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#ffffff" >
+
+        <LinearLayout
+            android:id="@+id/username_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/username_title"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textColor="#000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/password_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username_layout"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/password_title"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textColor="#000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:password="true"
+                android:textColor="#000000" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cardNumber_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password_layout"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/cardNumber_title"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Card Number"
+                android:textColor="#000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/cardNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cvvNumber_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardNumber_layout"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/cvvNumber_title"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="CVV Number"
+                android:textColor="#000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/CCVNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardNumber"
+                android:textColor="#000000" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/expiryDate_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cvvNumber_layout"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/expiryDate_title"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="CVV Number"
+                android:textColor="#000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/expiryDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CCVNumber"
+                android:textColor="#000000" >
+            </TextView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/viewDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/result_layout"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="10dp"
+        android:text="View Details" >
+    </Button>
+
+    <EditText
+        android:id="@+id/getFileId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/result_layout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:hint="Id Number" >
+    </EditText>
+
+</RelativeLayout>
